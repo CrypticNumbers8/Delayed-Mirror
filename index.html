@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delayed Mirror</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="navbar-title"
+        >Delayed Mirror - Developed by Aniket Karna
+      </span>
+      <span class="navbar-links"
+        ><a
+          href="https://crypticnumbers8.github.io/aniket_karna.github.io/"
+          target="_blank"
+          style="color: white"
+          >[My Portfolio]</a
+        >
+      </span>
+    </nav>
+    <div class="instructions">
+      <h2>Instructions on how to use this application:</h2>
+      <ol>
+        <li>
+          Select "Allow" when asked to use your cameras.(Full Screen
+          Recommended)
+        </li>
+        <li>
+          Select delay time(1-10), recommended setting = 5. (Real time = 1)
+        </li>
+        <li>Press spacebar or start button to begin recording.</li>
+        <li>
+          Recommend pressing spacebar and restarting recording every 60-90 sec.
+        </li>
+        <li>
+          You can download a .webm file to save the recording on your computer.
+        </li>
+      </ol>
+    </div>
+    <div class="container">
+      <video id="cameraVideo" autoplay></video>
+      <canvas id="delayedCanvas" width="800" height="560"></canvas>
+      <div id="recordingIndicator" class="recording-indicator"></div>
+    </div>
+    <div class="controls">
+      <label for="delay">Delay (seconds):</label>
+      <input type="number" id="delay" min="1" step="1" value="5" />
+      <button id="startButton">Start</button>
+      <button id="stopButton">Stop</button>
+
+      <span id="recordedTime" class="recorded-time"></span>
+      <span id="recordingStatus"></span>
+      <span id="recordingDuration"></span>
+
+      <a
+        id="downloadButton"
+        download="delayed_video.webm"
+        href="#"
+        style="display: none"
+        >Download Recording</a
+      >
+    </div>
+
+    <div
+      id="restartMessage"
+      style="color: red; display: none; text-align: center; margin: auto"
+    >
+      90 seconds are up - hit spacebar to restart recording!
+      <br />
+      Remember: You can download your current recording only before hitting
+      restart.
+    </div>
+    <footer class="footer">
+      <div class="footer-socials">
+        <a
+          href="https://crypticnumbers8.github.io/aniket_karna.github.io/"
+          target="_blank"
+          >Portfolio</a
+        >
+        <a href="https://github.com/CrypticNumbers8" target="_blank">Github</a>
+        <a href="https://www.instagram.com/aniketmagix/" target="_blank"
+          >Instagram</a
+        >
+        <a
+          href="https://www.youtube.com/channel/UCO78zhnGKAmzQ08BztgMYJQ"
+          target="_blank"
+          >YouTube</a
+        >
+        <a href="https://www.tiktok.com/@aniketmagix" target="_blank">TikTok</a>
+        <a href="https://www.aniketkarna.com" target="_blank">Website</a>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2024 Aniket Karna. All Rights Reserved.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

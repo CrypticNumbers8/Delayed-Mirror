@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.navbar-links {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+}
+.instructions {
+  text-align: left;
+  align-items: center;
+  margin: auto;
+  width: 600px;
+  padding-bottom: 15px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+video {
+  width: 640px;
+  height: 480px;
+  display: none;
+}
+
+canvas {
+  border: 3px solid #000000;
+}
+
+.recording-indicator {
+  position: absolute;
+  top: 10px;
+  right: 340px;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  display: none;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls label {
+  margin-right: 10px;
+}
+
+.controls input {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.controls button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#startButton {
+  background-color: #28a745;
+  color: white;
+}
+
+#startButton:hover {
+  background-color: #208609;
+}
+
+#stopButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+#stopButton:hover {
+  background-color: #a91b0d;
+}
+
+.controls button:last-child {
+  margin-right: 0;
+}
+
+.recorded-time {
+  margin-left: 10px;
+}
+
+#downloadButton {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+#downloadButton:hover {
+  background-color: #0056b3;
+}
+
+/* Existing CSS styles */
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-copyright {
+  margin-top: 10px;
+  font-size: 0.8em;
+}
