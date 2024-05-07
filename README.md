@@ -1,4 +1,3 @@
-# Delayed-Mirror
-A web application to see a little slowed down and delayed version of a mirror
+# Kaldi Coffee Farm
 
 https://delayed-mirror-app-aniket.netlify.app/
